@@ -6,10 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+3.times do |topic|
+	Topic.create!(
+		title: "Topic #{topic + 1}"
+	)
+end
+
 5.times do |x|
   Blog.create!(
   	title: "blog post number #{x + 1}",
-	body: "this is a test"
+	body: "this is a test",
+	topic_id: Topic.last.id
   )
 end
 
@@ -21,7 +28,7 @@ end
 	)
 end
 
-10.times do |portfolio_item|
+8.times do |portfolio_item|
 	Portfolio.create!(
 		title: "Portfolio title: #{portfolio_item + 1}",
 		subtitle: "great service",
@@ -30,3 +37,15 @@ end
 		thumb_image: "http://placehold.it/350x200"
 	)
 end
+
+
+8.times do |portfolio_item|
+        Portfolio.create!(
+                title: "Portfolio title: #{portfolio_item + 1}",
+                subtitle: "Angular",
+                body: "this is only a test",
+                main_image: "http://placehold.it/600x400",
+                thumb_image: "http://placehold.it/350x200"
+        )
+end
+
