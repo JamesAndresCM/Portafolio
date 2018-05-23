@@ -1,0 +1,12 @@
+<div class="masthead clearfix sticky-top" style="background-color: #4267b2">
+  <div class="inner">
+    <nav class="nav nav-masthead">
+      <%= link_to "Home Page", root_path, class: 'nav-link' %>
+      <%= link_to "About Me", about_me_path, class: "nav-link" %>
+      <%= link_to "Contact", contact_path, class: "nav-link" %>
+      <%= link_to "Blogs", blogs_path, class: "nav-link" %>
+      <%= link_to "Portfolio", portfolios_path, class: "nav-link" %>
+      <%= login_helper 'nav-link' %>
+    </nav>
+  </div>
+</div>
