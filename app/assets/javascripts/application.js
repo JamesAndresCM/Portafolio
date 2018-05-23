@@ -13,6 +13,8 @@
 //= require jquery3
 //= require bootstrap-sprockets
 //= require jquery-ui
+//= require cocoon
+//= require gritter
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
