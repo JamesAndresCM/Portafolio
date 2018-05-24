@@ -16,5 +16,6 @@
 //= require cocoon
 //= require gritter
 //= require rails-ujs
+//= require html.sortable
 //= require turbolinks
 //= require_tree .
