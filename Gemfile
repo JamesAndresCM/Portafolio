@@ -32,6 +32,7 @@ gem 'twitter', '~> 6.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
+gem 'carrierwave', '~> 1.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
