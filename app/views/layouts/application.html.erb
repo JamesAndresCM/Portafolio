@@ -11,15 +11,17 @@
   </head>
 
   <body>
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-         <%= render "shared/application_nav" %>
+  <%= render "shared/application_nav" %>
+  <br>
+  <br>
+  <div class="container">
+    <div class="flex-xl-nowrap">
+      <div class="container col-md-12">
            <%= yield %>
-         <%= render "shared/application_footer" %>
-         <%= source_helper("application") %>
         </div>
       </div>
     </div>
+  <%= render "shared/application_footer" %>
+  <%= source_helper("application") %>
   </body>
 </html>
