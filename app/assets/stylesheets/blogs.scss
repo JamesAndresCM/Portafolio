@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 @import "font-awesome";
+@import "gritter";
 
 /*
  * Globals
@@ -179,4 +180,8 @@ h6, .h6 {
 
 .social-links li {
   font-size: 2em;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }
