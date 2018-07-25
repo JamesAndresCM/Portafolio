@@ -6,52 +6,44 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-3.times do |topic|
-	Topic.create!(
-		title: "Topic #{topic + 1}"
-	)
-end
+User.create(
+  email: 'admin@domain.com',
+  password: 'admin123',
+  password_confirmation: 'admin123',
+  name: 'admin_site',
+  roles: 'site_admin'
+)
 
-5.times do |x|
-  Blog.create!(
-  	title: "blog post number #{x + 1}",
-	body: "this is a test",
-	topic_id: Topic.last.id
-  )
-end
+Skill.create([{
+               title: 'Docker',
+               percent_utilized: 70
+             },
+              {
+                title: 'RoR', percent_utilized: 50
+              }, {
+                title: 'Ruby', percent_utilized: 50
+              }, {
+                title: 'GNU/Linux', percent_utilized: 80
+              }, {
+                title: 'PHP', percent_utilized: 60
+              }, {
+                title: 'HTML', percent_utilized: 40
+              }, {
+                title: 'Javascript', percent_utilized: 40
+              }])
 
+Topic.create([{
+               title: 'Computer'
+             }, {
+               title: 'Algoritms'
+             }, {
+               title: 'Databases'
+             }, {
+               title: 'Technology'
+             }])
 
-5.times do |skill|
-	Skill.create!(
-		title: "Rails #{skill + 1}",
-		percent_utilized: 15
-	)
-end
+Blog.create(title: "test", body:"prueba", topic_id: 1)
 
-8.times do |portfolio_item|
-	Portfolio.create!(
-		title: "Portfolio title: #{portfolio_item + 1}",
-		subtitle: "great service",
-		body: "this is only a test",
-		main_image: "http://placehold.it/600x400",
-		thumb_image: "http://placehold.it/350x200"
-	)
-end
+Portfolio.create(title: "RoR", subtitle: "Ruby and Rails", body: "proyect rails")
 
-
-8.times do |portfolio_item|
-        Portfolio.create!(
-                title: "Portfolio title: #{portfolio_item + 1}",
-                subtitle: "Angular",
-                body: "this is only a test",
-                main_image: "http://placehold.it/600x400",
-                thumb_image: "http://placehold.it/350x200"
-        )
-end
-
-3.times do |technology|
-	Portfolio.last.technologies.create!(
-		name: "Technology #{technology + 1}",
-	)
-end
-
+Technology.create(name: "Rails", portfolio_id: 1)
