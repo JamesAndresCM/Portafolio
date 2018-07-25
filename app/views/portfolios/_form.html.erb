@@ -9,22 +9,22 @@
     <div class="col-md-6">
       <div class="form-group">
         <%= f.label :title %>
-        <%= f.text_field :title, class: 'form-control' %>
+        <%= f.text_field :title, class: 'form-control col-md-8' %>
       </div>
 
       <div class="form-group">
         <%= f.label :subtitle %>
-        <%= f.text_field :subtitle, class: 'form-control' %>
+        <%= f.text_field :subtitle, class: 'form-control col-md-8' %>
       </div>
 
       <div class="form-group">
-        <label class="btn btn-primary">
+        <label class="btn-sm btn btn-primary">
           Upload a main image file <%= f.file_field :main_image, style: 'display:none;' %>
         </label>
       </div>
 
       <div class="form-group">
-        <label class="btn btn-primary">
+        <label class="btn-sm btn btn-primary">
           Upload a thumb image file <%= f.file_field :thumb_image, style: 'display:none;' %>
         </label>
       </div>
@@ -40,7 +40,7 @@
 
   <hr>
 
-  <div class="col-md-12">
+  <div class="col-md-6">
     <h2>Technolgies Used:</h2>
     <div>
       <%= f.fields_for :technologies do |technology_form| %>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="form-group">
-      <%= f.submit 'Save Portfolio Item', class: 'btn btn-primary btn-block' %>
+      <%= f.submit 'Save Portfolio Item', class: 'mt-2 btn-sm btn btn-primary' %>
     </div>
   </div>
 <% end %>
