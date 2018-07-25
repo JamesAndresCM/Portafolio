@@ -15,18 +15,11 @@
     <%= render 'shared/blog_masthead' %>
 
     <div class="container">
-      <% if notice %>
-        <p id="notice" class="alert alert-success center mt-2" role="alert">
-          <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-          <%= notice %>
-        </p>
-      <% end %>
       <div class="row">
-
-	   <%= yield %>
-    <%= render 'shared/blog_sidebar' %>
+  	   <%= yield %>
+          <%= render 'shared/blog_sidebar' %>
       </div>
-
+          <%= alerts %>
     </div>
     <%= render 'shared/blog_footer' %>
   </body>
