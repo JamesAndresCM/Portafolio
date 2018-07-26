@@ -11,12 +11,12 @@
 // about supported directives.
 //
 //= require jquery3
-//= require bootstrap-sprockets
 //= require jquery-ui
+//= require rails-ujs
+//= require bootstrap-sprockets
 //= require cocoon
 //= require gritter
 //= require cable
-//= require rails-ujs
 //= require html.sortable
 //= require turbolinks
 //= require_tree .
