@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://:VDpMH2QasPOfyMVZhKHDNLmAmNCeK4qr@redis-12174.c8.us-east-1-4.ec2.cloud.redislabs.com:12174
   channel_prefix: Portafolio_production
